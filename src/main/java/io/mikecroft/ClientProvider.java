@@ -10,13 +10,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import javax.enterprise.context.ApplicationScoped;
+
 @ApplicationScoped
 public class ClientProvider {
 
   @Produces
   @Named("namespace")
   protected String findNamespace() throws IOException {
-    return new String(Files.readAllBytes(Paths.get("/var/run/secrets/kubernetes.io/serviceaccount/namespace")));
+    // return new String(Files.readAllBytes(Paths.get("/var/run/secrets/kubernetes.io/serviceaccount/namespace")));
+    return "mike-test-1";
   }
 
   @Produces
