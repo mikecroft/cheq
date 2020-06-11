@@ -1,7 +1,6 @@
-# quarkus-k8s-client project
+# cheq
 
-_Based on [this Instana blog](https://www.instana.com/blog/writing-a-kubernetes-operator-in-java-part-2/)_
-
+Uses Picocli and fabric8-kubernetes-client to list k8s resources.
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
